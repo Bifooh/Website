@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Freckle+Face&display=swap');
+:root {
+    --grey: #515151;
+    --second-grey: #555B55;
+
+    --light-blue: #F4F7FE;
+    --lavender: #FBF0F8;
+    --light-green: #E6F6E6;
+
+    --blue: #4A5F91;
+    --blue10percent: #ffffffb3;
+    --green: #C7EFCF;
+    --brown: #6F460C;
+    --light-brown: #F6F4E6;
+
+    --screen-heigth: 100vh:
+}
+html {
+    scroll-behavior: smooth;
+    font-family: "DM Sans", sans-serif;
+}
+body {
+    margin: 0;
+    background-color: white;
+}
+/* NAVIGATION BAR */
+nav {
+    padding: 5px 15px;
+    background-color: var(--blue10percent);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 0px 25px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.37);
+    max-height: 60px;
+}
+/* ------------- */
+.user_nav, .logo_area, .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo_area {
+    z-index: 2;
+    width: fit-content;
+    height: 65px;
+    box-sizing: border-box;
+}
+.logo_area img {
+    width: auto;
+    height: 80%;
+    opacity: .8;
+    aspect-ratio: 1/1;
+    margin-right: auto;
+}
+/* -------------- */
+.nav-links {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu li {
+    display: inline;
+    margin: 0 1.5rem;
+    transition: transform .2s;
+}
+.nav-menu a {
+    color: var(--grey);
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color .2s;
+}
+.nav-menu li:hover a{
+    color: #3B4F81 ;
+}
+.nav-menu li:hover {
+    transform: scale(1.05);
+}
+/* ------------------ */
+.user_nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#notifications_bell a{
+    font-size: 22px;
+    color: var(--grey);
+}
+.language-btn {
+    background-color: var(--grey);
+    border-radius: 10px;
+    padding: 5px 15px;
+    height: fit-content;
+    margin-right: 5px;
+    margin-left: auto;
+    transition: box-shadow .3s;
+}
+.language-btn a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+/* .language-btn:hover {
+    box-shadow: 0 0 5px grey;
+} */
+/* ------------------- */
+#login-icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+#login-icon:hover {
+    background-color: var(--blue10percent);
+}
+#login-icon i{
+    font-size: 30px;
+    background: var(--light-blue);
+    padding: 10px 12px;
+    border-radius: 18px;
+}
+.user_info p {
+    margin: auto 0;
+}
+#nav_username {
+    font-size: 18px;
+    font-weight: 400;
+}
+#nav_user_code{
+    color: var(--grey);
+    font-size: 14px;
+}
+/* ------------------- */
+#dropdown-menu {
+    position: fixed;
+    right: 0px;
+    top: 75px;
+    background-color: var(--blue10percent);
+    min-width: 200px;
+    border-radius: 25px;
+    backdrop-filter: blur(40px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+#dropdown-menu a {
+    display: block;
+    color: var(--grey);
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#dropdown-menu a:hover {
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+#container_logout_btn {width: 100%;}
+#logout_btn {
+    color: var(--grey);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    width: 100%;
+}
+#logout_btn:hover {
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+/* --------------- */

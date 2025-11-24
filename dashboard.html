@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar | BF English</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Dashboard | BF English</title>
     <link rel="stylesheet" href="styles/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <head>
-    <nav>
+<nav>
         <div class="logo_area"><img src="img/blue-logo.svg" alt="BF Logo"></div>
 
         <div class="nav-links">
@@ -19,21 +18,29 @@
                 <li><a href="plans.html">Plans</a></li>
                 <li><a href="games.html">Games</a></li>
             </ul>
+        </div>
+        <div class="user_nav">
             <div class="language-btn">
                 <a href="">ENG</a>
             </div>
-            <div class="login-icon">
+            <div id="notifications_bell">
+                <a href=""><i class="fa-solid fa-bell"></i></a>
+            </div>
+            <div id="login-icon">
                 <i class="fa-regular fa-user"></i>
-                <div class="drop-menu">
-                    <a href="dashboard.html">Dashboard</a>
-                    <a href="calendar.html">Calendar</a>
-                    <div class="holder">.</div>
+                <div class="user_info">
+                    <p id="nav_username">bifooh</p>
+                    <p id="nav_user_code">#7AF7</p>
                 </div>
             </div>
+        </div>
+        <div id="dropdown-menu">
+            <a href="#">Dashboard</a>
+            <a href="calendar.html">Calendar</a>
         </div>
     </nav>
 </head>
 
-
+<script src="script.js"></script>
 </body>
 </html>
